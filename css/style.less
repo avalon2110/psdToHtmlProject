@@ -103,32 +103,35 @@ section#header{
         font-weight: 300;
       }
       .social{
+        a:hover{
+          background-position: left -14px;
+        }
         float:right;
         .fb{
-          background: url("../images/social/fb.png") no-repeat;
-          width: 8px;
-          height: 12px;
+          background: url("../images/icons/footer-facebook.png") no-repeat;
+          width: 14px;
+          height: 14px;
           margin-left: 14px;
           display: inline-block;
         }
         .twitter{
-          width: 12px;
-          height: 10px;
-          background: url("../images/social/twitter.png") no-repeat;
+          width: 14px;
+          height: 14px;
+          background: url("../images/icons/footer-twitter.png") no-repeat;
           margin-left: 14px;
           display: inline-block;
         }
         .instagram{
-          width: 12px;
-          height: 12px;
-          background: url("../images/social/instagram.png");
+          width: 14px;
+          height: 14px;
+          background: url("../images/icons/footer-instagram.png") no-repeat;
           margin-left: 14px;
           display: inline-block;
         }
         .google{
-          width: 12px;
-          height: 12px;
-          background: url("../images/social/google.png");
+          width: 14px;
+          height: 14px;
+          background: url("../images/icons/google.png") no-repeat;
           margin-left: 14px;
           display: inline-block;
         }
@@ -166,6 +169,7 @@ section#header{
             }
             a:hover {
               //text-decoration: none;
+              opacity: 0.8;
               padding-bottom: 4px;
               border-bottom: 4px solid #e54b4b;
             }
@@ -189,6 +193,9 @@ section#header{
         font-weight: 400;
       }
       .login{
+        a:hover{
+          opacity: 0.8;
+        }
         //display: inline-block;
         margin-top: 25px;
         .login-text{
@@ -238,6 +245,9 @@ section#header{
       }
       .menu-togo{
         .st-btn{
+          :hover{
+            opacity: 0.8;
+          }
           border: 1px solid #fff;
           padding: 0;
           font-size: 0
@@ -375,7 +385,8 @@ section#main{
       button{
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15), inset 0 -2px 2px rgba(0, 0, 0, 0.24);
         border-radius: 3px;
-        border-color: #e54b4b;
+        border:none;
+        //border-color: #e54b4b;
         background-color: #e54b4b;
         //background-color: #fb6291;
         color: #ffffff;
@@ -384,6 +395,10 @@ section#main{
         font-weight: 400;
         line-height: 24px;
         padding: 6px 20px;
+      }
+      button:hover{
+        color: #e54b4b;
+        background-color: #fff;
       }
     }
   }
@@ -440,8 +455,9 @@ section#text-block{
       padding-left:30px;
       button{
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15), inset 0 -2px 2px rgba(0, 0, 0, 0.24);
+        border:none;
         border-radius: 3px;
-        border-color: #e54b4b;
+        //border-color: #e54b4b;
         background-color: #e54b4b;
         //background-color: #fb6291;
         color: #ffffff;
@@ -451,6 +467,80 @@ section#text-block{
         line-height: 24px;
         padding: 6px 20px;
       }
+      button:hover{
+        color: #e54b4b;
+        background-color: #fff;
+      }
+    }
+  }
+}
+section#map{
+  .map {
+  }
+  padding-top: 50px;
+  .menu_map{
+    padding-left:40px;
+  }
+  .menu_map ul{
+    li{
+      margin-right:40px;
+      display: inline-block;
+      //min-width: 15%;
+      .square{
+        vertical-align: middle;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+      }
+      .text{
+        color: #000000;
+        font-family: "Helvetica Neue Cyr";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-left:9px;
+      }
+    }
+  }
+  .select_settings{
+    padding-top:50px;
+    //margin-left: 30px;
+    .description{
+    display: inline-block;
+    }
+    .text{
+      padding-left: 10px;
+      vertical-align: middle;
+      p{
+        margin: 0;
+      };
+      position: absolute;
+      display: inline-block;
+      color: #e54b4b;
+      font-family: "Helvetica Neue Cyr";
+      font-size: 18px;
+      font-weight: 400;
+    }
+    ul{
+      padding-top: 15px;
+      padding-left:0;
+      li{
+        font-family: "Helvetica Neue Cyr";
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+  .all_countries{
+    text-align: center;
+    padding-top:10px;
+    span{
+      color: #000000;
+      font-family: "Helvetica Neue Cyr";
+      font-size: 18px;
+      font-weight: 400;
     }
   }
 }
@@ -590,6 +680,9 @@ section#footer{
     font-weight: 400;
   }
   .social{
+    a:hover{
+      background-position: left -14px;
+    }
     :hover{
       text-decoration: none;
     }
@@ -597,30 +690,30 @@ section#footer{
     padding-top: 0;
     float:right;
     .fb{
-      background: url("../images/social/fb.png") no-repeat;
-      width: 8px;
-      height: 12px;
+      background: url("../images/icons/footer-facebook.png") no-repeat;
+      width: 14px;
+      height: 14px;
       margin-left: 14px;
       display: inline-block;
     }
     .twitter{
-      width: 12px;
-      height: 10px;
-      background: url("../images/social/twitter.png") no-repeat;
+      width: 14px;
+      height: 14px;
+      background: url("../images/icons/footer-twitter.png") no-repeat;
       margin-left: 14px;
       display: inline-block;
     }
     .instagram{
-      width: 12px;
-      height: 12px;
-      background: url("../images/social/instagram.png");
+      width: 14px;
+      height: 14px;
+      background: url("../images/icons/footer-instagram.png") no-repeat;
       margin-left: 14px;
       display: inline-block;
     }
     .google{
-      width: 12px;
-      height: 12px;
-      background: url("../images/social/google.png");
+      width: 14px;
+      height: 14px;
+      background: url("../images/icons/google.png") no-repeat;
       margin-left: 14px;
       display: inline-block;
     }
@@ -784,6 +877,7 @@ section#footer{
   color: white;
 }
 
-.RU{
-  fill: red;
+.current{
+  color: #fefefe;
+  background-color: #e54b4b;
 }

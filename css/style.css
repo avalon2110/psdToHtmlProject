@@ -91,31 +91,34 @@ section#header .tel {
 section#header .social {
   float: right;
 }
+section#header .social a:hover {
+  background-position: left -14px;
+}
 section#header .social .fb {
-  background: url("../images/social/fb.png") no-repeat;
-  width: 8px;
-  height: 12px;
+  background: url("../images/icons/footer-facebook.png") no-repeat;
+  width: 14px;
+  height: 14px;
   margin-left: 14px;
   display: inline-block;
 }
 section#header .social .twitter {
-  width: 12px;
-  height: 10px;
-  background: url("../images/social/twitter.png") no-repeat;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/footer-twitter.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
 section#header .social .instagram {
-  width: 12px;
-  height: 12px;
-  background: url("../images/social/instagram.png");
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/footer-instagram.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
 section#header .social .google {
-  width: 12px;
-  height: 12px;
-  background: url("../images/social/google.png");
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/google.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
@@ -147,6 +150,7 @@ section#header .menu ul li a {
   border-bottom: 2px solid white;
 }
 section#header .menu ul li a:hover {
+  opacity: 0.8;
   padding-bottom: 4px;
   border-bottom: 4px solid #e54b4b;
 }
@@ -161,6 +165,9 @@ section#header .mail {
 }
 section#header .login {
   margin-top: 25px;
+}
+section#header .login a:hover {
+  opacity: 0.8;
 }
 section#header .login .login-text {
   display: inline-block;
@@ -211,6 +218,9 @@ section#header .menu-togo .st-btn {
   border: 1px solid #fff;
   padding: 0;
   font-size: 0;
+}
+section#header .menu-togo .st-btn :hover {
+  opacity: 0.8;
 }
 section#header .menu-togo input {
   background: transparent;
@@ -344,7 +354,7 @@ section#main .blog-item .blog-btn {
 section#main .blog-item .blog-btn button {
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15), inset 0 -2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
-  border-color: #e54b4b;
+  border: none;
   background-color: #e54b4b;
   color: #ffffff;
   font-family: "Helvetica Neue Cyr";
@@ -352,6 +362,10 @@ section#main .blog-item .blog-btn button {
   font-weight: 400;
   line-height: 24px;
   padding: 6px 20px;
+}
+section#main .blog-item .blog-btn button:hover {
+  color: #e54b4b;
+  background-color: #fff;
 }
 section#text-block {
   width: 100%;
@@ -411,8 +425,8 @@ section#text-block .blog-item .blog-btn {
 }
 section#text-block .blog-item .blog-btn button {
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15), inset 0 -2px 2px rgba(0, 0, 0, 0.24);
+  border: none;
   border-radius: 3px;
-  border-color: #e54b4b;
   background-color: #e54b4b;
   color: #ffffff;
   font-family: "Helvetica Neue Cyr";
@@ -420,6 +434,74 @@ section#text-block .blog-item .blog-btn button {
   font-weight: 400;
   line-height: 24px;
   padding: 6px 20px;
+}
+section#text-block .blog-item .blog-btn button:hover {
+  color: #e54b4b;
+  background-color: #fff;
+}
+section#map {
+  padding-top: 50px;
+}
+section#map .menu_map {
+  padding-left: 40px;
+}
+section#map .menu_map ul li {
+  margin-right: 40px;
+  display: inline-block;
+}
+section#map .menu_map ul li .square {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+section#map .menu_map ul li .text {
+  color: #000000;
+  font-family: "Helvetica Neue Cyr";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 9px;
+}
+section#map .select_settings {
+  padding-top: 50px;
+}
+section#map .select_settings .description {
+  display: inline-block;
+}
+section#map .select_settings .text {
+  padding-left: 10px;
+  vertical-align: middle;
+  position: absolute;
+  display: inline-block;
+  color: #e54b4b;
+  font-family: "Helvetica Neue Cyr";
+  font-size: 18px;
+  font-weight: 400;
+}
+section#map .select_settings .text p {
+  margin: 0;
+}
+section#map .select_settings ul {
+  padding-top: 15px;
+  padding-left: 0;
+}
+section#map .select_settings ul li {
+  font-family: "Helvetica Neue Cyr";
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  cursor: pointer;
+}
+section#map .all_countries {
+  text-align: center;
+  padding-top: 10px;
+}
+section#map .all_countries span {
+  color: #000000;
+  font-family: "Helvetica Neue Cyr";
+  font-size: 18px;
+  font-weight: 400;
 }
 section#footer {
   height: 170px;
@@ -543,34 +625,37 @@ section#footer .social {
   padding-top: 0;
   float: right;
 }
+section#footer .social a:hover {
+  background-position: left -14px;
+}
 section#footer .social :hover {
   text-decoration: none;
 }
 section#footer .social .fb {
-  background: url("../images/social/fb.png") no-repeat;
-  width: 8px;
-  height: 12px;
+  background: url("../images/icons/footer-facebook.png") no-repeat;
+  width: 14px;
+  height: 14px;
   margin-left: 14px;
   display: inline-block;
 }
 section#footer .social .twitter {
-  width: 12px;
-  height: 10px;
-  background: url("../images/social/twitter.png") no-repeat;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/footer-twitter.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
 section#footer .social .instagram {
-  width: 12px;
-  height: 12px;
-  background: url("../images/social/instagram.png");
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/footer-instagram.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
 section#footer .social .google {
-  width: 12px;
-  height: 12px;
-  background: url("../images/social/google.png");
+  width: 14px;
+  height: 14px;
+  background: url("../images/icons/google.png") no-repeat;
   margin-left: 14px;
   display: inline-block;
 }
@@ -712,6 +797,7 @@ section#footer .name {
   padding: 2px 16px;
   color: white;
 }
-.RU {
-  fill: red;
+.current {
+  color: #fefefe;
+  background-color: #e54b4b;
 }
